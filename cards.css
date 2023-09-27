@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    background-color: rgb(11, 26, 40);
+}
+
+h1{
+    text-align: center;
+    margin: 6rem 1rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+}
+
+.container div{
+    width: 15rem;
+    height: 20rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.one{
+    background-color:rgb(18, 188, 18);
+}
+.two{
+    background-color:yellow;
+}
+.three{
+    background-color:red;
+}
+.four{
+    background-color:rgb(57, 145, 199);
+}
+
+
+.container:hover .four{
+    transform: rotate(15deg) translate(-50%, -50%);
+    transform-origin: 0% 100%;
+}
+.container:hover .three{
+    transform: rotate(10deg) translate(-50%, -50%);
+    transform-origin: 0% 100%;
+}
+.container:hover .two{
+    transform: rotate(5deg) translate(-50%, -50%);
+    transform-origin: 0% 100%;
+}
+.container:hover .one{
+    transform: rotate(0deg) translate(-50%, -50%);
+    transform-origin: 0% 100%;
+}
